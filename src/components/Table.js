@@ -79,7 +79,7 @@ export class Table extends Component {
         this.clearSearch = this.clearSearch.bind(this);
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         window.addEventListener('resize', throttle(this.resizeTable, 150));
     }
 
