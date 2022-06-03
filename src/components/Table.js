@@ -87,7 +87,7 @@ export class Table extends Component {
         this.resizeTable();
     }
 
-    componentWillReceiveProps({ rows, columns, currentPage, totalPages }){
+    UNSAFE_componentWillReceiveProps({ rows, columns, currentPage, totalPages }){
         this.setState(currentState => {
             return {
                 ...currentState,
