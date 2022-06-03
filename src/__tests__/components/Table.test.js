@@ -171,7 +171,7 @@ describe('Table', () => {
 
     it('should test that the mounting and unmounting of the component is called', () => {
         const willMount = jest.spyOn(Table.prototype, 'componentWillMount');
-        const didMount = jest.spyOn(Table.prototype, 'componentDidMount');
+        const didMount = jest.spyOn(Table.prototype, 'UNSAFE_componentDidMount');
         const willUnmount = jest.spyOn(Table.prototype, 'componentWillUnmount');
 
         wrapper = mount(<Table { ...props } />);
