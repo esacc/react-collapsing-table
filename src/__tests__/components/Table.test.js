@@ -187,7 +187,7 @@ describe('Table', () => {
     });
 
     it('should test that when new params are passed they are set', () => {
-        const willReceiveProps = jest.spyOn(Table.prototype, 'componentWillReceiveProps');
+        const willReceiveProps = jest.spyOn(Table.prototype, 'UNSAFE_componentWillReceiveProps');
         props = { ...props, rowSize: 3, };
 
         wrapper = mount(<Table { ...props } />);
